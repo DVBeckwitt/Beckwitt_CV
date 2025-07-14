@@ -3,6 +3,7 @@
 
 \PassOptionsToPackage{style=ieee,sorting=ydnt,uniquename=init,defernumbers=true}{biblatex}
 \usepackage{settings}
+\usepackage{multicol}
 
 \DefineBibliographyStrings{english}{url={\textsc{url}}}
 
@@ -46,9 +47,12 @@
 \leftheader{%
   {\LARGE\bfseries\sffamily David Beckwitt, Ph.D.}
 
+  {\itshape Ph.D. candidate developing quantitative diffraction-simulation tools for 2-D vdW materials; expertise in CVD growth, area-detector analysis, and disorder modeling.}
+
   \makefield{\faEnvelope[regular]}{\href{mailto:example@gmail.com}{\texttt{David.Beckwitt@gmail.com}}}
   \makefield{\faGithub}{\href{https://github.com/DVBeckwitt}{\texttt{@DVBeckwitt}}}
   \makefield{\faLinkedin}{\href{https://www.linkedin.com/in/beckwitt/}{\texttt{@Beckwitt}}}
+  \makefield{\faOrcid}{\href{https://orcid.org/0000-0000-0000-0000}{\texttt{ORCID}}}
 }
 
 
@@ -65,11 +69,10 @@
 
 \makerubric{education}
 \makerubric{employment}
-\input{publications}
-\makerubric{teaching}
 \makerubric{skills}
-
+\input{publications}
 \pagebreak
+\makerubric{teaching}
 \makerubric{misc}
 %\makerubric{referees}
 
