@@ -49,16 +49,18 @@
 \RequirePackage{tikz}
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
    \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
+% Simple bullet icon used for bibliography labels
+\newcommand*\bibbullet{\tikz[baseline=(char.base)]{\node[shape=circle,fill=MarkerColour!80!black,inner sep=1pt,text height=1.35ex,minimum width=1.5em] (char) {};}}
 % !TEX encoding = UTF-8
 %\renewcommand{\entry}[2][]{\noindent\textbf{#1} #2\\}
 \newcounter{bibitem}
 \AtBeginBibliography{\setcounter{bibitem}{1}}
 \iffieldformatundef{labelnumberwidth}{%
   % if author-year style
-  \AtEveryBibitem{\makebox[2.5em][l]{\circled{\thebibitem}\stepcounter{bibitem}}}%
+  \AtEveryBibitem{\makebox[2.5em][l]{\bibbullet}\stepcounter{bibitem}}%
 }{%
   % if numeric style
-  \DeclareFieldFormat{labelnumberwidth}{\makebox[2.5em][l]{\circled{\thebibitem}}}%
+  \DeclareFieldFormat{labelnumberwidth}{\makebox[2.5em][l]{\bibbullet}}%
   \setlength{\biblabelsep}{0pt}%
   \AtEveryBibitem{\stepcounter{bibitem}}%
 }
