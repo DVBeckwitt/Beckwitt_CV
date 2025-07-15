@@ -1,6 +1,6 @@
 # Beckwitt CV
 
-This repository contains the LaTeX source for David Beckwitt's curriculum vitae.
+This repository contains the LaTeX source for David Beckwitt's curriculum vitae. All content is authored and maintained by David Beckwitt.
 
 ## Structure
 
@@ -12,4 +12,9 @@ This repository contains the LaTeX source for David Beckwitt's curriculum vitae.
 
 ## Building
 
-Run `pdflatex` (or `latexmk`) on `cv-llt.tex` to produce `cv-llt.pdf`.
+Compile `cv-llt.tex` using `pdflatex` or `latexmk`:
+
+```bash
+latexmk -pdf cv-llt.tex
+```
+
