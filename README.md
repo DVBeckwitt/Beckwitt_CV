@@ -4,8 +4,8 @@ This repository contains the LaTeX source for David Beckwitt's curriculum vitae.
 
 ## Structure
 
-- `cv-llt.tex` – main document that assembles all CV sections
-- `sections/` – individual TeX files for each CV section
+- `cv-llt.tex` – single LaTeX source containing all CV content
+- `sections/` – legacy section files kept for reference
 - `bib/own-bib.bib` – bibliography entries used in publications section
 - `images/` – profile photograph
 - `settings.sty` – common style configuration

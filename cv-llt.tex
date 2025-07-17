@@ -72,13 +72,118 @@
 \begin{document}
 \makeheaders[c]
 
-\makerubric{sections/education}
-\makerubric{sections/employment}
-\makerubric{sections/skills}
-\input{sections/publications}
+% Education
+\begin{rubric}{Education}
+  \entry*[May 2026 (expected)]%
+    \textbf{University of Missouri, Columbia, MO --- Ph.D. in Physics}
+    \par Dissertation: \emph{Investigating Disorder in van der Waals Thin Films}
+    \par Advisor: Dr. Paul Miceli
+  %
+  \entry*[May 2022]%
+    \textbf{University of Missouri, Columbia, MO --- M.S. in Physics}
+  %
+  \entry*[May 2020]{%
+    \begin{tabular}[t]{@{}l@{}}
+      \textbf{Missouri State University, Springfield, MO — B.S. in Physics}\\
+      \hfill \textit{Minor: Mathematics}
+    \end{tabular}%
+  }
+\end{rubric}
+
+% Research Experience
+\begin{rubric}{Research Experience}
+  \entry*[2021 -- Present]%
+    \textbf{Graduate Researcher,} University of Missouri; Advisor: Dr. Paul Miceli
+    \begin{itemize}
+      \item Developed a Python framework for quantitative modeling of area-detector GIWAXS measurements, implementing Reverse Monte Carlo methods to extract occupancies, anisotropic Debye--Waller factors, mosaicity, dimensionality, and laboratory geometry.
+      \item Extended simulation tools to model diffuse intensities from stacking-fault distributions, enabling quantitative determination of fault densities.
+      \item Grew phase-controlled PbI$_2$ thin films via CVD; validated simulations against experimental polytype fractions.
+      \item Implemented convolutional neural networks trained on simulated GIWAXS images for automated, quantitative structural characterization of van der Waals thin-films.
+    \end{itemize}
+
+  \entry*[2019 -- 2020]%
+    \textbf{Research Intern,} NASA Space Consortium
+    \begin{itemize}
+      \item Synthesized graphene thin films using pulsed laser deposition (PLD) and physical vapor deposition (PVD); characterized structural quality via Raman spectroscopy and electron microscopy.
+    \end{itemize}
+
+  \entry*[2017 -- 2020]%
+    \textbf{Research Assistant,} Missouri State University; Advisors: Dr. Kartik Ghosh \& Dr. Saibal Mitra
+    \begin{itemize}
+      \item Designed, built, and operated a PLD system; characterized films via XRD, Raman spectroscopy, SEM/EDS, and force-sensitive profilometry.
+    \end{itemize}
+
+  \entry*[2019]%
+    \textbf{Research \& Development Intern,} Dynatek Labs
+    \begin{itemize}
+      \item Developed software for biomedical testing and automated hardware systems.
+    \end{itemize}
+\end{rubric}
+
+% Technical Skills
+\begin{rubric}{Technical Skills}
+  \begin{tabular}{@{}ll@{}}
+    \textbf{Programming \& Data Analysis} & Python, Fortran, Git, MPI, Monte Carlo, Machine Learning (PyTorch) \\
+    \textbf{Instrumentation \& Techniques} & X-ray/neutron scattering, CVD\\
+    \textbf{Communication} & Technical writing, grant proposals, peer-review process\\
+  \end{tabular}
+\end{rubric}
+
+% Publications
+\makerubrichead{Research Publications}
+\nocite{*}
+\printbibliography[heading=subbibliography,title={Journal Articles},type=article]
+\printbibliography[heading=subbibliography,title={Conference Proceedings},type=inproceedings]
+\printbibliography[heading=subbibliography,title={In Review / In Preparation},keyword=inprep]
+
 \pagebreak
-\makerubric{sections/teaching}
-\makerubric{sections/misc}
+
+% Teaching Experience
+\begin{rubric}{Teaching Experience}
+  \entry*[2018--2023]%
+    \textbf{Instructor and Teaching Assistant}, University of Missouri and Missouri State University \RMPbadge\par
+    \begin{itemize}
+      \item Calculus-based Mechanics, Electricity \& Magnetism, and Introductory C++ Programming
+    \end{itemize}
+
+  \entry*[2021--Present]%
+    \textbf{Academic Tutor}, Physics Courses, University of Missouri, Columbia, MO
+
+  \entry*[2018--2021]%
+    \textbf{ACT Prep Tutor}, Club Z!, Springfield, MO
+
+  \entry*[2014--2020]%
+    \textbf{Martial Arts Coach}, Dunham’s Martial Arts, Springfield, MO
+\end{rubric}
+
+% Leadership, Service & Outreach
+\begin{rubric}{Leadership, Service \& Outreach}
+  \subrubric{Professional Affiliations}
+  \entry*[2017--2021] \textbf{Society of Physics Students}.
+  \entry*[2019--Present] \textbf{American Physical Society}.
+  \entry*[2020--Present] \textbf{Forum on the History and Philosophy of Physics}.
+  \entry*[2022--Present] \textbf{Sigma Phi Sigma}.
+
+  \subrubric{Outreach and Service}
+  \entry*[2017--2020] \textbf{SPS High School Engagement}, Missouri State University.
+  \entry*[2018--2019] \textbf{College of Natural and Applied Sciences Leadership Board}, Missouri State University.
+  \entry*[2022]       \textbf{$\Sigma \Pi \Sigma$ Physics Congress – Presentation/Poster Judge}, Washington, DC.
+  \entry*[2022--2023] \textbf{Coalition of Graduate Workers Diversity Officer}, University of Missouri.
+  \entry*[2022--2023] \textbf{President, Physics and Astronomy Graduate Student Association}, University of Missouri.
+  \entry*[2023--2024] \textbf{Vice-President, Physics and Astronomy Graduate Student Association}, University of Missouri.
+  \entry*[2022--2024] \textbf{Director, PAGSA Mental Health Wellness Program}, University of Missouri.
+  \entry*[2022--2024] \textbf{Research Outreach}, University of Missouri.
+
+  \subrubric{Awards}
+  \entry*[2021] \textbf{O.M. Stewart Scholarship}, University of Missouri.
+  \entry*[2022] \textbf{Newell S. Gingrich Physics Scholarship}, University of Missouri.
+  \entry*[2022] \textbf{Excellence in Student Leadership}, Graduate Professional Council, University of Missouri.
+  \entry*[2022] \textbf{Excellence in Undergraduate Teaching}, University of Missouri.
+  \entry*[2023] \textbf{Outstanding Student Research Presentation}, Neutron Scattering Society.
+  \entry*[2023] \textbf{Excellence in Physics Fergason Scholarship}, University of Missouri.
+  \entry*[2023] \textbf{Green Chalk Teaching Award}, University of Missouri.
+  \entry*[2023] \textbf{Rangel-Boain Travel Award}, University of Missouri.
+\end{rubric}
 %\makerubric{sections/referee}
 
 \end{document}
