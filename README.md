@@ -1,6 +1,6 @@
 # Beckwitt CV
 
-This repository contains the LaTeX source for David Beckwitt's curriculum vitae. All content is authored and maintained by David Beckwitt.
+This repository contains the LaTeX source for my curriculum vitae. All content is authored and maintained by David Beckwitt.
 
 ## Structure
 

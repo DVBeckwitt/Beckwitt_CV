@@ -64,7 +64,11 @@
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
    \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
 % Simple bullet icon used for bibliography labels
-\newcommand*\bibbullet{\tikz[baseline=(char.base)]{\node[shape=circle,fill=MarkerColour!80!black,inner sep=1pt,text height=1.35ex,minimum width=1.5em] (char) {};}}
+\newcommand* \bibbullet{\tikz[baseline=(char.base)]{
+  \node[shape=circle,fill=MarkerColour!80!black,inner sep=.5pt,
+        text height=1ex,minimum width=1em] (char) {};
+}}
+
 % !TEX encoding = UTF-8
 %\renewcommand{\entry}[2][]{\noindent\textbf{#1} #2\\}
 \newcounter{bibitem}
@@ -90,6 +94,24 @@
 \xpretofieldformat{url}
   {\textcolor{MarkerColour!80!black}{\scriptsize\faLink}}
   {}{}
+
+
+\usepackage{xcolor}
+
+% Add this to your preamble
+\definecolor{AccentBlue}{HTML}{1F4E79}
+
+% Revised tagline macro for better spacing and readability
+\newcommand{\tagline}{%
+  \vspace{4pt} % increased vertical space from top contact details
+  {\large\sffamily\bfseries\color{AccentBlue}%
+   Computational Materials Science • Machine Learning • X-ray/Neutron Diffraction %
+  }\par\vspace{4pt}
+  {\small\sffamily\color{gray}%
+   Quantitative Diffraction Simulation• 2D Materials • Defect Engineering • Thin-Film Growth%
+  }%
+  \vspace{8pt} % additional bottom spacing
+}
 
 \headerscale{1}
 %\setlength{\headerspace}{6pt}
