@@ -46,7 +46,7 @@
   % override column type used for the date/key field so every rubric
   % reserves the same width; this keeps itemize bullets aligned across
   % different rubrics
-  \renewcolumntype{k}{>{\@keyfont}p{\CVkeywidth}}%
+  \newcolumntype{k}{>{\@keyfont}p{\CVkeywidth}}%
   % consistent bullet indentation for itemize environments
   \setlist[itemize]{align=parleft,leftmargin=2em,labelsep=0.5em,itemsep=0pt}
 }
