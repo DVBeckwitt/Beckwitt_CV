@@ -3,6 +3,7 @@
 \RequirePackage{silence}
 \WarningsOff[longtable]
 \WarningsOff[array]
+\RequirePackage{array}
 
 \usepackage{ifxetex,ifluatex}
 \newif\ifxetexorluatex
@@ -42,7 +43,7 @@
   % set width based on the longest key/date used in the CV
   \settowidth{\CVkeywidth}{May 2026 (expected)}%
   % ensure all rubric tables share this width for the key column
-  \renewcolumntype{k}{>{\@keyfont}p{\CVkeywidth}}%
+  \newcolumntype{k}{>{\@keyfont}p{\CVkeywidth}}%
   % consistent bullet indentation for itemize environments
   \setlist[itemize]{align=parleft,leftmargin=2em,labelsep=0.5em,itemsep=0pt}
 }
