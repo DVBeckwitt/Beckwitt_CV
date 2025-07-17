@@ -34,6 +34,7 @@
 \usetikzlibrary{shapes,shadows}
 
 \RequirePackage{comment}
+\RequirePackage{enumitem}
 \AtBeginDocument{\setlist[itemize]{leftmargin=2em}}
 \definecolor{SwishLineColour}{HTML}{4A90E2}
 \definecolor{MarkerColour}{HTML}{F5A623}
@@ -105,10 +106,10 @@
 \newcommand{\prefixmarker}[1]{\def\@prefixmarker{#1}}
 \def\@prefixmarker{\relscale{.9}\faBookmark}
 
+% Align prefix markers and entry text regardless of marker width
 \prefix{%
-  \hspace*{-1ex}
-  \color{MarkerColour!80!black}\@prefixmarker%
-  \hspace*{1ex}%
+  \makebox[1.5em][c]{\color{MarkerColour!80!black}\@prefixmarker}%
+  \hspace*{0.5em}%
 }
 
 \newcommand{\makerubrichead}[1]{\vskip\baselineskip\@@rubrichead{#1}}
