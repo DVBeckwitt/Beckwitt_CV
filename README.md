@@ -5,6 +5,7 @@ This repository contains the LaTeX source for my curriculum vitae. All content i
 ## Structure
 
 - `cv-llt.tex` – main document that assembles all CV sections
+- `cv-all.tex` – self-contained version with all content in a single file
 - `sections/` – individual TeX files for each CV section
 - `bib/own-bib.bib` – bibliography entries used in publications section
 - `images/` – profile photograph
