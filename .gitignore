@@ -7,3 +7,5 @@
 *.bcf
 *.run.xml
 comment.cut
+*.fls
+*.fdb_latexmk
