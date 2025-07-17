@@ -35,7 +35,10 @@
 
 \RequirePackage{comment}
 \RequirePackage{enumitem}
-\AtBeginDocument{\setlist[itemize]{leftmargin=2em}}
+% Consistent bullet alignment across rubric sections
+\AtBeginDocument{%
+  \setlist[itemize]{align=parleft,leftmargin=2.5em,labelsep=0.5em,itemsep=0pt}
+}
 \definecolor{SwishLineColour}{HTML}{4A90E2}
 \definecolor{MarkerColour}{HTML}{F5A623}
 \newcommand{\RMPbadge}{%
