@@ -34,13 +34,12 @@
 \usetikzlibrary{shapes,shadows}
 
 \RequirePackage{comment}
+\AtBeginDocument{\setlist[itemize]{leftmargin=2em}}
 \definecolor{SwishLineColour}{HTML}{4A90E2}
 \definecolor{MarkerColour}{HTML}{F5A623}
 \newcommand{\RMPbadge}{%
   \href{https://www.ratemyprofessors.com/professor/2686648}{%
-    \fbox{%
-      \parbox[c][1.5ex][c]{3cm}{\centering\small\color{black!60}\textsc{Student Reviews}}%
-    }%
+    {\small\color{MarkerColour!80!black}\textsc{Student Reviews}}%
   }%
 }
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
