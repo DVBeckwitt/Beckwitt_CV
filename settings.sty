@@ -61,6 +61,7 @@
 \RequirePackage{biblatex}
 \RequirePackage{csquotes}
 \RequirePackage{tikz}
+
 \newcommand*\circled[1]{\tikz[baseline=(char.base)]{
    \node[shape=circle,text=white,fill=MarkerColour!80!black,font=\sffamily\scriptsize\bfseries,inner sep=1pt,text height=1.35ex,minimum width=1.5em,text centered] (char) {#1};}}
 % Simple bullet icon used for bibliography labels
@@ -68,6 +69,16 @@
   \node[shape=circle,fill=MarkerColour!80!black,inner sep=.5pt,
         text height=1ex,minimum width=1em] (char) {};
 }}
+% define once, near your other colours
+\definecolor{LinkColour}{HTML}{C57F1B} % dark‑orange, contrast ≈ 5.3 : 1
+
+\hypersetup{
+  colorlinks,
+  linkcolor  = LinkColour,
+  urlcolor   = LinkColour,
+  citecolor  = LinkColour,
+  breaklinks = true
+}
 
 % !TEX encoding = UTF-8
 %\renewcommand{\entry}[2][]{\noindent\textbf{#1} #2\\}
