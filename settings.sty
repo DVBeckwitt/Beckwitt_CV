@@ -57,6 +57,9 @@
     {\small\color{MarkerColour!80!black}\textsc{Student Reviews}}%
   }%
 }
+\setlist[itemize]{noitemsep,topsep=1pt,leftmargin=*}
+\usepackage{newunicodechar}             % after inputenc/fontspec
+\newunicodechar{ }{\,}                  % map U+202F → thin space
 % If you're not a researcher nor an academic, you probably don't need biblatex; delete this line.
 \RequirePackage{biblatex}
 \RequirePackage{csquotes}
